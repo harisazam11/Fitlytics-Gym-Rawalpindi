@@ -240,8 +240,21 @@ footer{background:var(--dark3);border-top:1px solid var(--border);padding:40px 5
 @media(max-width:900px){
   .nav-links{display:none}
   .hamburger{display:flex}
-  .hero-inner{grid-template-columns:1fr}
-  .hero-visual{display:none}
+.hero { padding: 80px 5% 60px; }
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .hero-visual {
+    display: block; /* show image */
+    width: 100%;
+    max-width: 400px; /* optional max size */
+    margin: 0 auto;
+  }
+  .hero-img-wrap {
+    aspect-ratio: 3/4; /* keep original ratio */
+  }
+
   .about-grid{grid-template-columns:1fr}
   .about-img{display:none}
   .fac-grid{grid-template-columns:repeat(2,1fr)}
